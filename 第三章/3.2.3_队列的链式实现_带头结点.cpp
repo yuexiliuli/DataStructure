@@ -37,7 +37,7 @@ void EnQueue(LinkQueue &Q,ElemType x){
 }
 
 //队头元素出队（带头节点）
-bool Dequeue(LinkQueue &Q,ElemType &x){
+bool DeQueue(LinkQueue &Q,ElemType &x){
     if(Q.front == Q.rear)
         return false;
     LinkNode *p = Q.front->next;

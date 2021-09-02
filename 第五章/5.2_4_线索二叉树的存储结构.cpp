@@ -24,22 +24,6 @@ typedef struct BiTNode
 // BiTNode *pre = NULL;  //指向当前访问节点的前驱
 // BiTNode *final=NULL;  //用于记录最终结果
 
-//访问节点q
-void visit(BiTNode *q){
-    if(q==p)            //当前访问节点刚好是节点p
-        final = pre;    //找到p的前驱
-    else 
-        pre=q;          //pre指向当前访问的节点
-}
-
-//先序遍历
-void InOrder(BiTree T){
-    if(T!=NULL){
-        InOrder(T->lchild);  //递归遍历左子树
-        visit(T);  //访问根节点
-        InOrder(T->rchild);  //递归遍历右子树
-    }
-}
 
 //全局变量 pre ,指向当前访问节点的前驱，指向当前访问节点的前驱
 ThreadNode *pre = NULL;  

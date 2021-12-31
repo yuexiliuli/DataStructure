@@ -1,1 +1,7 @@
 *.exe
+
+/.vs/
+/.vscode/
+/x64/
+
+DataStructure.*
